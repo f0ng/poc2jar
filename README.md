@@ -76,11 +76,12 @@ Upgrade-Insecure-Requests: 1
 
 ## 运行
 
-Mac OS
+### Mac OS
 直接运行jar即可
 
-Windows
+### Windows
 需要在命令行加入参数编码参数，即
+
 java -jar -Dfile.encoding=utf-8 poc2jar.jar
 
 
