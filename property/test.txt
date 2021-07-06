@@ -1,5 +1,5 @@
 POST /mac/gateway.php HTTP/1.1
-Host: q.leoei.com
+Host: x.x.x.x
 User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0
 Content-Length: 43
 Charset: utf-8
