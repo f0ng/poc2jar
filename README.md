@@ -1,3 +1,25 @@
+## 2021.8.8更新 v0.2
+1.批量模块更改为python批量，默认用的python3，所以需要配置一下python3命令。(emmm后续再看看改成go试试)
+
+2.添加finalshell密码解密
+
+3.添加seeyon数据库密码解密
+
+
+注：
+1.增加了pythonexp/poc2jarpiliang.py、url.txt文件，最好重新下载一遍项目里的txt
+2.property/config.properties增加python2、python3，python脚本默认python2执行
+### python批量
+![image](https://user-images.githubusercontent.com/48286013/128634771-d1ddc92d-16f3-46da-ba62-3976baf4d6cc.png)
+
+### finalshell密码解密(支持批量)
+![image](https://user-images.githubusercontent.com/48286013/128634782-af2dd0a8-5673-4614-9f9f-cd9e717b3de0.png)
+
+### seeyon数据库密码解密(支持批量)
+![image](https://user-images.githubusercontent.com/48286013/128634792-cc3121e2-941f-4b6c-9aff-35e0f02734cf.png)
+
+
+# 源介绍
 # poc2jar
 个人写的很简陋的poc工具，每次遇到新的漏洞爆发出来，都要去复现，复现好以后保存到哪里就成了一个问题了，写这个工具，就是为了解决这个问题，希望能集合到个人主机内，然后可以根据不同的poc来使用
 
