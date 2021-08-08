@@ -7,7 +7,9 @@
 
 
 注：
+
 1.增加了pythonexp/poc2jarpiliang.py、url.txt文件，最好重新下载一遍项目里的txt
+
 2.property/config.properties增加python2、python3，python脚本默认python2执行
 ### python批量
 ![image](https://user-images.githubusercontent.com/48286013/128634771-d1ddc92d-16f3-46da-ba62-3976baf4d6cc.png)
