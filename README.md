@@ -90,7 +90,9 @@ Upgrade-Insecure-Requests: 1
 
 ③.对于单个目标可以把对应模块的poc全部测一遍
 
-④.考虑和goby、xray格式相同(长久来看)
+④.所需要的文件有点多，考虑办法不需要文件，直接写进jar包内
+
+⑤.考虑和goby、xray格式相同(长久来看)
 
 ## 对文件的说明
 ①.poc文件夹存放poc文件，即yml文件
