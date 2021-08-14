@@ -1,3 +1,16 @@
+## 2021.8.14更新 v0.3
+1.完善对于单个目标进行全部poc检测
+![image](https://user-images.githubusercontent.com/48286013/129446750-8814104e-5916-4efe-b56a-763faa6fc711.png)
+
+
+2.将python固定至jar包内部，减少config.properties文件(对macos来说，windows还未适配)
+
+3.将test.txt固定至jar包内部，减少test.txt文件(对macos来说，windows还未适配)
+
+后续看看windows怎么减少config.properties文件和test.txt文件，文件说明在最下面都有解释
+
+基本已经完成我所需要的功能了，后续看有必要再次更新
+
 ## 2021.8.8更新 v0.2
 1.批量模块更改为python批量，默认用的python3，所以需要配置一下python3命令。(emmm后续再看看改成go试试)
 
@@ -88,9 +101,9 @@ Upgrade-Insecure-Requests: 1
 
 ~~②.对于多线程没有处理好~~用python替代了
 
-③.对于单个目标可以把对应模块的poc全部测一遍
+~~③.对于单个目标可以把对应模块的poc全部测一遍
 
-④.所需要的文件有点多，考虑办法不需要文件，直接写进jar包内
+④.所需要的文件有点多，考虑办法不需要文件，直接写进jar包内 2021.8.14(部分完成)
 
 ⑤.考虑和goby、xray格式相同(长久来看)
 
@@ -100,6 +113,9 @@ Upgrade-Insecure-Requests: 1
 ②.property文件夹存放cmdlists.txt，即常用命令模块；config.properties，即python路径，或者环境变量下python的调用命令；exetest.txt，即tasklist /svc查找的敏感进程；test.txt是保存的请求包
 
 ③.pythonexp文件夹存放的python脚本，usage放在了文件第一行，可以进行调用
+
+## 安装说明
+安装pyyaml库 5.3.1
 
 
 ## 运行
