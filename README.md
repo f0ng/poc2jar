@@ -2,10 +2,9 @@
 1.完善对于单个目标进行全部poc检测
 ![image](https://user-images.githubusercontent.com/48286013/129446750-8814104e-5916-4efe-b56a-763faa6fc711.png)
 
+2.python运行命令可在调用python脚本手动设置。
 
-2.将python固定至jar包内部，减少config.properties文件(对macos来说，windows还未适配)
-
-3.将test.txt固定至jar包内部，减少test.txt文件(对macos来说，windows还未适配)
+3.将python固定至jar包内部，减少config.properties文件；将test.txt固定至jar包内部，减少test.txt文件(对macos来说，windows还未适配)
 
 后续看看windows怎么减少config.properties文件和test.txt文件，文件说明在最下面都有解释
 
