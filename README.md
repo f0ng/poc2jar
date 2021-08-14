@@ -129,5 +129,50 @@ Upgrade-Insecure-Requests: 1
 java -jar -Dfile.encoding=utf-8 poc2jar.jar
 
 
+## 编写过程的难点
+其实真正的难点在于发请求，尤其是发POST请求，但是没有Content-type这样的漏洞payload的时候，有些漏洞请求是要POST，但是Content-type是不需要的，这就导致了该项目当时停滞不前，遇到一位大佬帮我解决问题，真的太感谢了，此处艾特董神
+主要在于setIfNotSet自动加上了，所以我们重写这个方法
+下面给出解决的demo
+
+![image](https://user-images.githubusercontent.com/48286013/129446994-8390f4a3-e8de-4278-9573-82fe20e9974e.png)
+
+test类下定义一个setIfNotSet方法
+```
+  public synchronized void setIfNotSet(String arg0, String arg1) {
+//        System.out.println("hook: " + arg0);
+      if ("Content-type".equals(arg0)) {
+      return;
+  }
+
+      if ("Connection".equals(arg0)) {
+      return;
+  }
+
+      if ("Accept".equals(arg0)) {
+      return;
+  }
+
+      super.setIfNotSet(arg0, arg1);
+}
+```
+
+继承test类
+```
+HttpURLConnection connection = (HttpURLConnection) realUrl.openConnection();
+// 设置通用的请求属性
+
+Object target = connection;
+if (!target.getClass().equals(sun.net.www.protocol.http.HttpURLConnection.class)) {
+    //https
+    Field field1 = connection.getClass().getDeclaredField("delegate");
+    field1.setAccessible(true);
+    target = field1.get(connection);
+}
+Field field2 = sun.net.www.protocol.http.HttpURLConnection.class.getDeclaredField("requests");
+field2.setAccessible(true);
+test customMessageHeader = new test();
+```
+
+
 # 免责声明
 请勿将本项目技术或代码应用在恶意软件制作、软件著作权/知识产权盗取或不当牟利等非法用途中。实施上述行为或利用本项目对非自己著作权所有的程序进行数据嗅探将涉嫌违反《中华人民共和国刑法》第二百一十七条、第二百八十六条，《中华人民共和国网络安全法》《中华人民共和国计算机软件保护条例》等法律规定。本项目提及的技术仅可用于私人学习测试等合法场景中，任何不当利用该技术所造成的刑事、民事责任均与本项目作者无关。
