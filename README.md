@@ -1,3 +1,8 @@
+## 2021.11.15更新 v0.4
+1.完善密码模块对druid密码的解密，在druid 1.0.16版本及之前
+![image](https://user-images.githubusercontent.com/48286013/141799695-c135ea10-7a0c-4276-bc9c-4ecbec16e465.png)
+发现有些时候poc利用的还不是很好，emmm在思考怎么优化
+
 ## 2021.8.14更新 v0.3
 1.完善对于单个目标进行全部poc检测
 ![image](https://user-images.githubusercontent.com/48286013/129446750-8814104e-5916-4efe-b56a-763faa6fc711.png)
