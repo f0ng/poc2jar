@@ -1,6 +1,7 @@
 ## 2021.11.18更新v0.42
 
 1.增加命令模块(Bash模块、PowerShell模块、Python模块、Perl模块)，参考http://www.jackson-t.ca/runtime-exec-payloads.html
+
 Bash模块
 ![image](https://user-images.githubusercontent.com/48286013/142406058-949d8ee4-538e-4775-bd41-57a7c36668da.png)
 
