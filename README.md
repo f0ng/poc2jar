@@ -1,3 +1,29 @@
+## 2021.11.18更新v0.42
+
+1.增加命令模块(Bash模块、PowerShell模块、Python模块、Perl模块)，参考http://www.jackson-t.ca/runtime-exec-payloads.html
+Bash模块
+![image](https://user-images.githubusercontent.com/48286013/142406058-949d8ee4-538e-4775-bd41-57a7c36668da.png)
+
+PowerShell模块
+![image](https://user-images.githubusercontent.com/48286013/142406094-b8772cab-d54c-4396-8ec5-8eaa360cc6c0.png)
+
+Python模块
+![image](https://user-images.githubusercontent.com/48286013/142406118-9bb318f4-5a2f-4d0b-96fc-40e949e7b398.png)
+
+Perl模块
+![image](https://user-images.githubusercontent.com/48286013/142406136-487292be-a95d-4c66-9b37-f371ef7b26d1.png)
+
+2.增加cs快速生成命令模块，第二三四条可以绕过windows defender的上线命令，第一条只是做了加号处理
+![image](https://user-images.githubusercontent.com/48286013/142406303-fbc4170c-0010-404e-9726-7a16289b24cf.png)
+
+第五条效果不好
+![image](https://user-images.githubusercontent.com/48286013/142406408-d288b0df-e455-4c07-9c53-414662623962.png)
+
+
+3.优化windows下体验（由于没在windows下测试，导致windows之前的jar都打不开，0.42开始，windows和mac都会进行一次测试）
+
+todo:base64模块解码加入猜解，参考(https://xz.aliyun.com/t/7779)
+
 ## 2021.11.17更新v0.41
 
 1.优化listview选择列表事件，可通过上下方向键进行选择，
