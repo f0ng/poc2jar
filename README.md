@@ -236,7 +236,7 @@ Upgrade-Insecure-Requests: 1
 
 ## 编写过程的难点
 其实真正的难点在于发请求，尤其是发POST请求，但是没有Content-type这样的漏洞payload的时候，有些漏洞请求是要POST，但是Content-type是不需要的，这就导致了该项目当时停滞不前，遇到一位大佬帮我解决问题，真的太感谢了，此处艾特董神
-主要在于setIfNotSet自动加上了，所以我们重写这个方法
+主要在于setIfNotSet自动加上了Content-type，所以我们重写这个方法
 下面给出解决的demo
 
 ![image](https://user-images.githubusercontent.com/48286013/129446994-8390f4a3-e8de-4278-9573-82fe20e9974e.png)
