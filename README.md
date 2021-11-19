@@ -1,3 +1,17 @@
+## 2021.11.19更新v0.44
+1.base64模块解码加入猜解，参考(https://xz.aliyun.com/t/7779)
+
+测试base64：
+RuYW1lPVRfWlBHTF9ER1dSU0pHWlNYJklzaGFzWVBYSEJ5ZmlsZWQ9JnNlbGVjdGZpZWxkSWRzPSwmc2VsZWN0ZmllbGRJZHNWYWx1ZT0sY29td2lzZWR1Y29td2lzZWR1c3VibWl0PXRydWUmeXB4aHZhbHVlPTI3OTQ2Jn
+![image](https://user-images.githubusercontent.com/48286013/142590124-db8eaa2f-bf6c-4601-b7eb-907f62d72788.png)
+![image](https://user-images.githubusercontent.com/48286013/142590146-3eabbe4a-7c0a-4800-b24f-68df4694ada4.png)
+
+
+2.优化cs payload，可以进行按钮保存，方便之后打开使用
+![image](https://user-images.githubusercontent.com/48286013/142590183-eb315244-1907-4cce-bb1b-ac9dfead1f44.png)
+
+
+
 ## 2021.11.19更新v0.43
 优化windows下的启动参数，由于mac下java默认是utf-8，windows下java默认是gbk
 
@@ -38,7 +52,7 @@ Perl模块
 
 3.优化windows下体验（由于没在windows下测试，导致windows之前的jar都打不开，0.42开始，windows和mac都会进行一次测试）
 
-todo:base64模块解码加入猜解，参考(https://xz.aliyun.com/t/7779)
+~~todo:base64模块解码加入猜解，参考(https://xz.aliyun.com/t/7779)~~
 
 ## 2021.11.17更新v0.41
 
