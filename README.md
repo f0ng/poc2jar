@@ -228,9 +228,9 @@ Upgrade-Insecure-Requests: 1
 直接运行jar即可
 
 ### Windows
-需要在命令行加入参数编码参数，否则会乱码，即
 
-java -jar -Dfile.encoding=utf-8 poc2jar.jar
+直接运行jar即可
+~~需要在命令行加入参数编码参数，否则会乱码，即java -jar -Dfile.encoding=utf-8 poc2jar.jar~~
 
 
 ## 编写过程的难点
