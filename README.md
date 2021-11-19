@@ -86,15 +86,15 @@ mListView1.getSelectionModel().getSelectedItem()
 
 4.增加编码模块(Unicode、URL、Base64、Hex、Html、ascii编码)，由于平时编码工具很少，要么是burp的编码模块，很难用，要么是某些在线网站，在线网站进行编码，需要有互联网，就导致了在一些内网环境中无法进行编码、解码，所以写了进去，简单介绍下：
 
-Unicode模块
+Unicode模块(遇见一些网页响应包里的无法转码，可以尝试这个模块)
 ![image](https://user-images.githubusercontent.com/48286013/142168767-f1c1d0a0-bd5e-4cf6-ac81-614ad2097729.png)
 ![image](https://user-images.githubusercontent.com/48286013/142168787-4cecf2f2-a438-441a-9284-1e2023568e0d.png)
 
-URL模块
+URL模块(有些在URL里以百分号存在的字符，可以尝试这个模块)
 ![image](https://user-images.githubusercontent.com/48286013/142168842-636decd2-8274-40b7-94cc-71cf3310a6a3.png)
 ![image](https://user-images.githubusercontent.com/48286013/142168853-52ebffb1-db60-4bb0-90a8-6b4df9351cc5.png)
 
-Base64模块
+Base64模块(形如base64格式的，可以尝试这个模块)
 ![image](https://user-images.githubusercontent.com/48286013/142168894-7646ae1c-49bd-43c9-a4d3-55d5ea38de32.png)
 ![image](https://user-images.githubusercontent.com/48286013/142168912-696026a1-062c-435a-87fb-d18adf56696c.png)
 
@@ -102,11 +102,11 @@ Hex模块
 ![image](https://user-images.githubusercontent.com/48286013/142168964-9fdefedb-2aac-4f82-ae2a-eaee5769ccf7.png)
 ![image](https://user-images.githubusercontent.com/48286013/142168988-c4a3c648-bfa6-4f80-8650-a004dd31490b.png)
 
-Html模块
+Html模块(形如&#格式的，可以尝试这个模块)
 ![image](https://user-images.githubusercontent.com/48286013/142169035-04363225-dc93-4723-81ba-93df392d441b.png)
 ![image](https://user-images.githubusercontent.com/48286013/142169056-c8e3587f-044c-4bdb-909f-a246afac9d8d.png)
 
-ascii模块
+ascii模块(一般是在SQL注入中会用到，取ascii码进行比对)
 ![image](https://user-images.githubusercontent.com/48286013/142169215-d5441ec3-2c00-4fd4-8ea5-8cc3a800fe35.png)
 ![image](https://user-images.githubusercontent.com/48286013/142169093-f7fe18f0-8cfe-4002-bd9b-619abecaf93d.png)
 
