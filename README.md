@@ -1,5 +1,5 @@
 ## 2021.11.19更新v0.44
-1.base64模块解码加入猜解，参考(https://xz.aliyun.com/t/7779)
+1.base64模块解码加入分段猜解，类似base64编码中可能存在部分非base64的加密部分，剔除后进行base64解密。参考(https://xz.aliyun.com/t/7779)
 
 测试base64：
 RuYW1lPVRfWlBHTF9ER1dSU0pHWlNYJklzaGFzWVBYSEJ5ZmlsZWQ9JnNlbGVjdGZpZWxkSWRzPSwmc2VsZWN0ZmllbGRJZHNWYWx1ZT0sY29td2lzZWR1Y29td2lzZWR1c3VibWl0PXRydWUmeXB4aHZhbHVlPTI3OTQ2Jn
