@@ -1,3 +1,14 @@
+## 2021.11.19更新v0.43
+优化windows下的启动参数，由于mac下java默认是utf-8，windows下java默认是gbk
+mac下
+![image](https://user-images.githubusercontent.com/48286013/142573620-2a6d9e60-d655-43e9-9312-a72e1766511a.png)
+
+windows下
+![image](https://user-images.githubusercontent.com/48286013/142574018-d3dea484-22ca-45d5-80fc-196f592955dd.png)
+
+导致有师傅提了issue，这里思考了一下，把文本文档的编码更改一下应该就行了，windows下双击打开jar：
+![image](https://user-images.githubusercontent.com/48286013/142574409-9cafa494-1028-4b7c-a4a7-b75cf4c67a36.png)
+
 ## 2021.11.18更新v0.42
 
 1.增加命令模块(Bash模块、PowerShell模块、Python模块、Perl模块)，参考http://www.jackson-t.ca/runtime-exec-payloads.html
