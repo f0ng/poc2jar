@@ -83,6 +83,8 @@ mListView1.getSelectionModel().getSelectedItem()
 2.去除了文件中会显示.DS_store文件
 
 3.增加druid1.0.16版本及以后的解密方式
+![image](https://user-images.githubusercontent.com/48286013/142714061-706efac4-ef57-4eef-b2e0-6b3bd1c5e713.png)
+
 
 4.增加编码模块(Unicode、URL、Base64、Hex、Html、ascii编码)，由于平时编码工具很少，要么是burp的编码模块，很难用，要么是某些在线网站，在线网站进行编码，需要有互联网，就导致了在一些内网环境中无法进行编码、解码，所以写了进去，简单介绍下：
 
