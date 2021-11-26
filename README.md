@@ -9,7 +9,12 @@ uri信息这里做了jdbc执行次数的降序排列，也就是最上面的可�
 
 SESSION值，大家应该都知道，看SESSION的有效性了；
 
+还有一个小优化就是bash命令增加去掉花括号和bash -c的版本，感谢@金鱼 师傅完善
+![image](https://user-images.githubusercontent.com/48286013/143533129-666d115a-9d07-4fa8-90f9-71e79ed0d4b0.png)
+
+
 发现python模块下的脚本可能会未响应，后续增加脚本的延时跳出未响应状态
+（迭代的时候发现properties被覆盖了，已经更正过来，感谢@Tukali 师傅提交issue）
 
 ## 2021.11.20更新v0.45
 
