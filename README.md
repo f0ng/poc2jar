@@ -1,3 +1,4 @@
+# [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 ## 2021.11.30更新v0.47
 新增模块
 1.增加CORS漏洞poc生成、JSONP漏洞poc生成，在日常挖洞过程中，会遇到cors、jsonp，有些是安服项目，有些是src项目，但是每次遇到这些漏洞，poc的生成会比较麻烦，像我自己平时也会挖掘一些漏洞交到src混混奖励等等
