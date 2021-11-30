@@ -1,3 +1,38 @@
+## 2021.11.30更新v0.47
+新增模块
+1.增加CORS漏洞poc生成、JSONP漏洞poc生成，在日常挖洞过程中，会遇到cors、jsonp，有些是安服项目，有些是src项目，但是每次遇到这些漏洞，poc的生成会比较麻烦，像我自己平时也会挖掘一些漏洞交到src混混奖励等等
+![image](https://user-images.githubusercontent.com/48286013/143991178-eec32cb9-9741-4371-a747-c780f232ae25.png)
+
+模块演示环境取自DoraBox(https://github.com/0verSp4ce/DoraBox)
+CORS生成模块:
+![image](https://user-images.githubusercontent.com/48286013/143992884-232ae532-ab3a-4ef3-b48e-b5143997584a.png)
+导出文件为poc2jar-cors.html
+![image](https://user-images.githubusercontent.com/48286013/143993055-f127a3bc-4437-4441-93ac-40c2455b5784.png)
+访问poc2jar-cors.html，即可看到弹窗：
+![image](https://user-images.githubusercontent.com/48286013/143993099-fb0113d1-9c87-467d-8b40-74704878fef2.png)
+
+这里有个CORS的小tips，在一些src站点中，把js代码保存成js文件，然后上传个新的html引用这个js文件，在一些环境中就可以执行了
+
+JSONP模块:
+![image](https://user-images.githubusercontent.com/48286013/143993221-6cb7c178-fa3d-4f26-96c8-19aa8556cb29.png)
+导出文件为poc2jar-jsonp.html
+![image](https://user-images.githubusercontent.com/48286013/143993258-6da3db90-8229-4345-99cc-7690d7258fd4.png)
+访问poc2jar-jsonp.html，即可看到弹窗
+![image](https://user-images.githubusercontent.com/48286013/143993366-0f74f8a6-4eba-4f28-8733-7104863e392f.png)
+
+优化部分:
+Python脚本模块增加报错机制，具体实现为:
+```
+            Process pro = Runtime.getRuntime().exec(commands);
+            InputStream Output = pro.getInputStream(); // Output为正常信息
+            InputStream errorOutput = pro.getErrorStream(); // errorOutput为报错信息
+```
+界面如下：
+![image](https://user-images.githubusercontent.com/48286013/143993821-0f89766e-771e-413b-b23d-b08292033ac1.png)
+
+
+
+
 ## 2021.11.25更新v0.46
 增加druid未授权漏洞利用，可以查看到jdbc链接、数据库用户名、sql语句、访问的uri、SESSION值
 ![image](https://user-images.githubusercontent.com/48286013/143398014-b8641072-5503-4437-a270-af172fe81d15.png)
