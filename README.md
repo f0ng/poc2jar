@@ -13,7 +13,7 @@ CORS生成模块:
 
 导出文件为poc2jar-cors.html
 
-<img src="https://user-images.githubusercontent.com/48286013/143993055-f127a3bc-4437-4441-93ac-40c2455b5784.png" width="600" height="600" />
+<img src="https://user-images.githubusercontent.com/48286013/143993055-f127a3bc-4437-4441-93ac-40c2455b5784.png" width="400" height="400" />
 
 访问poc2jar-cors.html，即可看到弹窗：
 
@@ -27,7 +27,7 @@ JSONP模块:
 
 导出文件为poc2jar-jsonp.html
 
-<img src="https://user-images.githubusercontent.com/48286013/143993258-6da3db90-8229-4345-99cc-7690d7258fd4.png" width="600" height="600" />
+<img src="https://user-images.githubusercontent.com/48286013/143993258-6da3db90-8229-4345-99cc-7690d7258fd4.png" width="400" height="400" />
 
 访问poc2jar-jsonp.html，即可看到弹窗
 
