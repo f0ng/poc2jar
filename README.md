@@ -1,6 +1,7 @@
 ## 2021.11.30更新v0.47
 新增模块
 1.增加CORS漏洞poc生成、JSONP漏洞poc生成，在日常挖洞过程中，会遇到cors、jsonp，有些是安服项目，有些是src项目，但是每次遇到这些漏洞，poc的生成会比较麻烦，像我自己平时也会挖掘一些漏洞交到src混混奖励等等
+
 <img src="https://user-images.githubusercontent.com/48286013/143991178-eec32cb9-9741-4371-a747-c780f232ae25.png" width="300" height="150" />
 
 模块演示环境取自DoraBox(https://github.com/0verSp4ce/DoraBox)
