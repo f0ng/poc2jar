@@ -1,6 +1,6 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 ## 2021.12.8更新v0.48
-增加shiro RememberMe参数解密，取自https://github.com/r00tuser111/SerializationDumper-Shiro
+增加shiro RememberMe参数解密模块，取自https://github.com/r00tuser111/SerializationDumper-Shiro
 
 增加反编译工具fernflower.jar、shiro key文件keys.conf
 
