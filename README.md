@@ -1,6 +1,25 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
+## 2021.12.8更新v0.48
+增加shiro RememberMe参数解密，取自https://github.com/r00tuser111/SerializationDumper-Shiro
+
+增加反编译工具fernflower.jar、shiro key文件keys.conf
+
+举例说明：
+使用ysoserial工具生成
+![image](https://user-images.githubusercontent.com/48286013/145145278-b1af2c13-d485-43fd-b886-fca30df758e9.png)
+
+进行解密：
+![image](https://user-images.githubusercontent.com/48286013/145145451-f1192d2c-7af2-412a-9b20-ec6e973fd67b.png)
+
+使用shiro利用工具生成
+![image](https://user-images.githubusercontent.com/48286013/145145747-96c07663-9ca7-4c20-a2f2-a64cb635ca2e.png)
+
+进行解密：
+![image](https://user-images.githubusercontent.com/48286013/145145797-722bf316-1253-4d70-9208-2d743b217f48.png)
+
 ## 2021.11.30更新v0.47
 新增模块
+
 1.增加CORS漏洞poc生成、JSONP漏洞poc生成，在日常挖洞过程中，会遇到cors、jsonp，有些是安服项目，有些是src项目，但是每次遇到这些漏洞，poc的生成会比较麻烦，像我自己平时也会挖掘一些漏洞交到src混混奖励等等
 
 <img src="https://user-images.githubusercontent.com/48286013/143991178-eec32cb9-9741-4371-a747-c780f232ae25.png" width="300" height="150" />
