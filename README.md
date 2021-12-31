@@ -1,5 +1,15 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
+
+## 2021.12.31更新v0.49
+
+优化了tasklist的进程查找
+
+优化了常用命令的排序
+![9A569E54-A419-4EEA-8A35-00E9CF39878F](https://user-images.githubusercontent.com/48286013/147808198-e42e7014-87c9-4418-8fa5-8f8977bbf9f4.png)
+
+todo:添加aes、des加解密的模块
+
 ## 2021.12.8更新v0.48
 增加shiro RememberMe参数解密模块，取自https://github.com/r00tuser111/SerializationDumper-Shiro
 
