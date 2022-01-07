@@ -1,6 +1,6 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
-## 2022.1.7更新v0.51
+## 2022.1.7更新v0.52
 修复windows下无法保存poc问题
 <img src="https://user-images.githubusercontent.com/48286013/148566681-6bfd2faf-d85f-4523-ad92-1e24cba6144a.png" width="1412" height="600" />
 
