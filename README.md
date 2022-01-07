@@ -1,6 +1,11 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
 ## 2022.1.7更新v0.51
+修复windows下无法保存poc问题
+<img src="https://user-images.githubusercontent.com/48286013/148566681-6bfd2faf-d85f-4523-ad92-1e24cba6144a.png" width="1412" height="600" />
+
+
+## 2022.1.7更新v0.51
 修复druid解密模块的问题，原版本中存在无法解密问题(1.0.16+版本)
 
 AES模块增加key、iv的模式(Base64、Hex)、补位模式
