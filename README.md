@@ -4,16 +4,20 @@
 修复windows下进程查找模块乱码问题，原因还是和之前一样的，文本编码应该为gbk
 
 增加提取路径模块，工作中会遇到要提取一些路径问题，这里我简单举两个例子，web.xml下，显示了一些配置文件，诸如/WEB-INF/xxx文件，但是有很多，手动查找起来特别慢，这里直接使用工具
+
 <img src="https://user-images.githubusercontent.com/48286013/149614689-29a0d05d-aff5-4310-b1c0-fa164b13684d.png" width="750" height="650" />
 
 再比如说，我们要去通过web.xml去读取源码，那么我们就要去获取类名，但是一个个去匹配，比较麻烦，也可以使用工具匹配
+
 <img src="https://user-images.githubusercontent.com/48286013/149614774-5f327f04-4369-4a7b-abdc-c1c3b38ea937.png" width="750" height="650" />
 
 也可以直接请求url进行匹配，如下
+
 <img src="https://user-images.githubusercontent.com/48286013/149614811-77713c98-be77-4474-a95d-34678bfab2ba.png" width="750" height="650" />
 
 也可以用于其他方面，如spring下的未授权接口收集，直接访问授权页面的即可收集所有spring的接口
 也可以直接请求url进行匹配，如下
+
 <img src="https://user-images.githubusercontent.com/48286013/149616465-b0899a1d-0e0e-4c0e-98f9-959a55d04ca2.png" width="750" height="650" />
 
 
