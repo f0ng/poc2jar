@@ -1,5 +1,18 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
+## 2022.1.20更新v0.54
+修复shiro解密逻辑
+
+增加shiro AES GCM解密，原工具https://github.com/r00tuser111/SerializationDumper-Shiro 只支持AES CBC
+
+<img src="https://user-images.githubusercontent.com/48286013/150246924-8f789f06-9e17-4b97-acca-6b64fb3ed571.png" width="750" height="650" />
+
+<img src="https://user-images.githubusercontent.com/48286013/150247215-caa83dc2-dc47-4096-be34-a6ec43f1297a.png" width="750" height="650" />
+
+<img src="https://user-images.githubusercontent.com/48286013/150247355-923ebad7-7170-40d4-b42e-f6635d398d7f.png" width="750" height="650" />
+
+另shiro key增加到1208个，参考项目https://github.com/SummerSec/ShiroAttack2
+
 ## 2022.1.15更新v0.53
 修复windows下进程查找模块乱码问题，原因还是和之前一样的，文本编码应该为gbk
 
