@@ -1,5 +1,16 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
+
+## 2022.3.30更新v0.55
+
+1.修复命令模块下的bash编码错误的问题
+
+<img width="725" alt="image" src="https://user-images.githubusercontent.com/48286013/160746308-7ba24b30-6b67-472d-bcc1-ffbcdb081f04.png">
+
+2.修复CS命令上线第一条命令少了`"`的问题
+
+<img width="1002" alt="image" src="https://user-images.githubusercontent.com/48286013/160746320-25ae5cf5-0754-4e91-b180-11661711de59.png">
+
 ## 2022.1.20更新v0.54
 修复shiro解密逻辑
 
