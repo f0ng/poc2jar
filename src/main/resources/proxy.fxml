@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.ProxyController">
+   <children>
+      <TextField fx:id="mTextField66" layoutX="130.0" layoutY="76.0" promptText="ip:port" />
+      <Label layoutX="41.0" layoutY="79.0" text="ip地址:端口号" />
+      <Label layoutX="40.0" layoutY="45.0" text="http/https代理" />
+      <Button layoutX="120.0" layoutY="230.0" mnemonicParsing="false" onAction="#openThrid" text="设置代理" />
+      <Label layoutX="40.0" layoutY="133.0" text="socks5代理" />
+      <Label layoutX="40.0" layoutY="170.0" text="ip地址:端口号" />
+      <TextField fx:id="mTextField62" layoutX="130.0" layoutY="174.0" promptText="ip:port" />
+   </children>
+</AnchorPane>

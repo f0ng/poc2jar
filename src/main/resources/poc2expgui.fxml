@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="855.0" prefWidth="1057.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Poc2ExpguiController">
+   <children>
+      <TabPane layoutY="38.0" prefHeight="847.0" prefWidth="1060.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="poc保存">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="mLabel" layoutX="17.0" layoutY="31.0" text="数据包位置" />
+                         <TextArea fx:id="mTextArea" layoutX="14.0" layoutY="83.0" prefHeight="510.0" prefWidth="675.0" promptText="数据包位置" wrapText="true">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <font>
+                              <Font size="15.0" />
+                           </font></TextArea>
+                         <Button fx:id="mButton3" layoutX="442.0" layoutY="615.0" mnemonicParsing="false" onAction="#onButton3Click" text="步骤3.读取响应生成exp的yml文件" />
+                         <TitledPane animated="false" layoutX="693.0" layoutY="40.0" prefHeight="756.0" prefWidth="363.0" text="发包与是否满足条件选项">
+                             <content>
+                                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="725.0" prefWidth="267.0">
+                                     <children>
+                                         <Button fx:id="mButton" layoutX="17.0" layoutY="18.0" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="27.0" prefWidth="83.0" text="步骤1.发包" />
+                                         <Label fx:id="mlabel3" layoutX="132.0" layoutY="21.0" text="响应时间:" />
+                                         <Label fx:id="mLabel2" layoutX="200.0" layoutY="20.0" text="0" />
+                                         <Button fx:id="mButton2" layoutX="27.0" layoutY="59.0" mnemonicParsing="false" onAction="#onButton2Click" prefHeight="27.0" prefWidth="245.0" text="步骤2.根据响应包条件确认是否满足" />
+                                         <Label fx:id="mLabel4" layoutX="24.0" layoutY="100.0" text="(是否满足条件将在这里显示)" />
+                                         <TextArea fx:id="mTextArea2" layoutX="11.0" layoutY="216.0" prefHeight="502.0" prefWidth="346.0" wrapText="true" />
+                                         <Label layoutX="245.0" layoutY="21.0" text="ms" />
+                                     <TitledPane animated="false" layoutX="17.0" layoutY="131.0" prefHeight="70.0" prefWidth="147.0" text="响应包关键字">
+                                         <content>
+                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="16.0" prefWidth="148.0">
+                                                 <children>
+                                                     <Text layoutX="66.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                                     <TextField fx:id="mTextField1" layoutX="10.0" layoutY="9.0" prefHeight="27.0" prefWidth="106.0" />
+                                                 </children>
+                                             </AnchorPane>
+                                         </content>
+                                     </TitledPane>
+                                     <TitledPane animated="false" layoutX="190.0" layoutY="131.0" prefHeight="70.0" prefWidth="136.0" text="响应包时间">
+                                         <content>
+                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="16.0" prefWidth="148.0">
+                                                 <children>
+                                                     <TextField fx:id="mTextField2" layoutX="14.0" layoutY="7.0" prefHeight="27.0" prefWidth="104.0" />
+                                                 </children>
+                                             </AnchorPane>
+                                         </content>
+                                     </TitledPane>
+                                     </children>
+                                 </AnchorPane>
+                             </content>
+                         </TitledPane>
+                         <TextField fx:id="mTextField3" layoutX="41.0" layoutY="614.0" prefHeight="27.0" prefWidth="112.0" />
+                         <TextArea fx:id="mTextArea3" layoutX="37.0" layoutY="660.0" prefHeight="129.0" prefWidth="647.0" wrapText="true" />
+                         <Label layoutX="43.0" layoutY="591.0" text="exp名称" />
+                         <Label layoutX="41.0" layoutY="645.0" text="exp描述" />
+                        <Label layoutX="204.0" layoutY="591.0" text="yml文件名称" />
+                        <TextField fx:id="mTextField4" layoutX="212.0" layoutY="614.0" promptText="tongda/*.yml" />
+                        <Label layoutX="129.0" layoutY="31.0" text="是否https:" />
+                        <RadioButton fx:id="mRadiobutton" layoutX="204.0" layoutY="30.0" mnemonicParsing="false" text="https" />
+                        <Label layoutX="308.0" layoutY="31.0" text="是否允许跳转:" />
+                        <RadioButton fx:id="mRadiobutton1" layoutX="410.0" layoutY="30.0" mnemonicParsing="false" text="不允许" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="mTab1" text="exp利用">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="825.0" prefWidth="1070.0">
+                     <children>
+                        <Label layoutX="576.0" layoutY="32.0" text="漏洞url" />
+                        <TextField fx:id="mTextField5" layoutX="625.0" layoutY="26.0" prefHeight="27.0" prefWidth="291.0" promptText="请填入需要单个exp检测的url" />
+                        <Button fx:id="mButton4" layoutX="932.0" layoutY="26.0" mnemonicParsing="false" onAction="#onButton4Click" text="漏洞利用" />
+                        <TextArea fx:id="mTextArea4" layoutX="550.0" layoutY="101.0" prefHeight="303.0" prefWidth="502.0" promptText="响应数据包" wrapText="true" />
+                        <Label layoutX="580.0" layoutY="70.0" text="响应时间" />
+                        <Label layoutX="684.0" layoutY="70.0" text="ms" />
+                        <Label layoutX="733.0" layoutY="71.0" text="是否含有相应关键字" />
+                        <TextArea fx:id="mTextArea5" layoutX="547.0" layoutY="459.0" prefHeight="309.0" prefWidth="503.0" promptText="批量url,换行符为多个url分隔符/单个url批量exp结果" wrapText="true" />
+                        <ListView fx:id="mListView1" layoutX="13.0" layoutY="91.0" onKeyReleased="#mListView1Click2" onMouseClicked="#mListView1Click" prefHeight="643.0" prefWidth="113.0" />
+                        <ListView fx:id="mListView2" layoutX="140.0" layoutY="90.0" onKeyReleased="#mListView2Click2" onMouseClicked="#mListView2Click" prefHeight="646.0" prefWidth="170.0" />
+                        <Label layoutX="321.0" layoutY="261.0" text="漏洞名称" />
+                        <Label layoutX="321.0" layoutY="354.0" text="漏洞描述" />
+                        <Label layoutX="340.0" layoutY="62.0" text="exp响应时间条件" />
+                        <Label layoutX="334.0" layoutY="128.0" text="exp响应关键字条件" />
+                        <Label layoutX="421.0" layoutY="99.0" text="ms" />
+                        <Text fx:id="mText3" layoutX="369.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                        <Text fx:id="mText4" layoutX="390.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="无" />
+                        <Text fx:id="mText5" layoutX="649.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />
+                        <Text fx:id="mText6" layoutX="869.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="无" />
+                        <Button fx:id="mButton7" layoutX="691.0" layoutY="772.0" mnemonicParsing="false" onAction="#onButton7Click" text="批量url利用单个exp" />
+                        <Label layoutX="19.0" layoutY="38.0" prefHeight="23.0" prefWidth="78.0" text="exp大类">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="177.0" layoutY="55.0" text="exp列表">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="mTextAreatest" layoutX="317.0" layoutY="384.0" prefHeight="340.0" prefWidth="224.0" />
+                        <TextField fx:id="mTextField6" layoutX="318.0" layoutY="304.0" prefHeight="27.0" prefWidth="216.0" />
+                        <Button fx:id="mButton6" layoutX="396.0" layoutY="741.0" mnemonicParsing="false" onAction="#onButton6Click" text="修改" />
+                        <Button fx:id="mButton11" layoutX="968.0" layoutY="413.0" mnemonicParsing="false" onAction="#onButton11Click" text="批量exp利用" />
+                        <TextField fx:id="mTextField51" layoutX="550.0" layoutY="417.0" prefHeight="27.0" prefWidth="403.0" promptText="选中需要检测的exp大类,再填入需要批量exp检测的url" />
+                        <Label layoutX="350.0" layoutY="185.0" text="是否允许跳转" />
+                        <Text fx:id="mText32" layoutX="392.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="无" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="tasklist进程搜索">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="36.0" layoutY="25.0" prefHeight="16.0" prefWidth="134.0" text="命令:tasklist /svc">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="mTextArea6" layoutX="34.0" layoutY="66.0" prefHeight="710.0" prefWidth="488.0" promptText="命令执行结果粘贴此处" wrapText="true" />
+                        <Button fx:id="mButton8" layoutX="541.0" layoutY="114.0" mnemonicParsing="false" onAction="#onButton8Click" text="查看敏感进程" />
+                        <TextArea fx:id="mTextArea7" layoutX="659.0" layoutY="66.0" prefHeight="302.0" prefWidth="373.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="常用命令">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="mListView3" layoutX="42.0" layoutY="18.0" onKeyReleased="#mListView3Click2" onMouseClicked="#mListView3Click" prefHeight="746.0" prefWidth="271.0" />
+                        <TextArea fx:id="mTextArea8" layoutX="339.0" layoutY="15.0" prefHeight="756.0" prefWidth="701.0">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="调用python脚本">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="mListView4" layoutX="16.0" layoutY="19.0" onKeyReleased="#mListView4Click2" onMouseClicked="#mListView4Click" prefHeight="722.0" prefWidth="202.0" />
+                        <ListView fx:id="mListView5" layoutX="226.0" layoutY="19.0" onKeyReleased="#mListView5Click2" onMouseClicked="#mListView5Click" prefHeight="725.0" prefWidth="262.0" />
+                        <TextField fx:id="mTextField7" layoutX="556.0" layoutY="51.0" prefHeight="31.0" prefWidth="480.0" />
+                        <Label layoutX="512.0" layoutY="55.0" text="参数">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="mTextArea9" layoutX="553.0" layoutY="142.0" prefHeight="607.0" prefWidth="491.0" wrapText="true" />
+                        <Label layoutX="511.0" layoutY="136.0" text="输出">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mButton9" layoutX="699.0" layoutY="98.0" mnemonicParsing="false" onAction="#onButton9Click" text="利用">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="49.0" layoutY="772.0" text="Python2地址">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mTextField8" layoutX="130.0" layoutY="767.0" prefHeight="27.0" prefWidth="223.0" />
+                        <Label fx:id="mLabeltest2" layoutX="597.0" layoutY="16.0" text="示例">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mTextField82" layoutX="505.0" layoutY="767.0" prefHeight="27.0" prefWidth="223.0" />
+                        <Label layoutX="386.0" layoutY="772.0" text="Python3地址">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="mButton13" layoutX="796.0" layoutY="759.0" mnemonicParsing="false" onAction="#onButton12Click" prefHeight="27.0" prefWidth="128.0" text="修改python路径">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="简单利用模块">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutY="-2.0" prefHeight="817.0" prefWidth="1060.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Druid未授权漏洞利用">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="562.0" prefWidth="869.0">
+                                       <children>
+                                          <TextArea fx:id="mTextArea24" layoutX="694.0" layoutY="207.0" prefHeight="564.0" prefWidth="355.0">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></TextArea>
+                                          <Label layoutX="845.0" layoutY="169.0" text="SESSION">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="mTextArea22" layoutX="408.0" layoutY="202.0" prefHeight="567.0" prefWidth="276.0">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></TextArea>
+                                          <TextArea fx:id="mTextArea21" layoutX="10.0" layoutY="229.0" prefHeight="542.0" prefWidth="386.0">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font></TextArea>
+                                          <Label layoutX="515.0" layoutY="169.0" text="URI">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="mTextField11" layoutX="185.0" layoutY="47.0" prefHeight="30.0" prefWidth="669.0" />
+                                          <TextField fx:id="mTextField10" layoutX="183.0" layoutY="14.0" prefHeight="27.0" prefWidth="578.0" />
+                                          <Button fx:id="mButton26" layoutX="861.0" layoutY="49.0" mnemonicParsing="false" onAction="#onButton26Click" text="利用">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="43.0" layoutY="85.0" text="数据库用户名:">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="44.0" layoutY="50.0" text="JDBC链接地址:">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="15.0" layoutY="16.0" text="druid未授权漏洞地址:">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="mTextField12" layoutX="183.0" layoutY="83.0" prefHeight="30.0" prefWidth="170.0" />
+                                          <Label layoutX="161.0" layoutY="193.0" text="SQL">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="跨域漏洞利用">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextArea fx:id="mTextArea25" layoutX="11.0" layoutY="80.0" prefHeight="607.0" prefWidth="628.0" wrapText="true" />
+                                          <Button layoutX="462.0" layoutY="704.0" mnemonicParsing="false" onAction="#onButton27Click" text="生成POC">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <RadioButton fx:id="mRadiobutton7" layoutX="78.0" layoutY="34.0" mnemonicParsing="false" text="CORS">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </RadioButton>
+                                          <RadioButton fx:id="mRadiobutton8" layoutX="223.0" layoutY="35.0" mnemonicParsing="false" text="JSONP">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </RadioButton>
+                                          <TextArea fx:id="mTextArea26" layoutX="647.0" layoutY="79.0" prefHeight="607.0" prefWidth="405.0" wrapText="true" />
+                                          <Button layoutX="624.0" layoutY="702.0" mnemonicParsing="false" onAction="#onButton28Click" text="导出HTML">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Button>
+                                          <RadioButton fx:id="mRadiobutton9" layoutX="625.0" layoutY="37.0" mnemonicParsing="false" text="是否为https">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="解密模块">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="815.0" prefWidth="1061.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Shiro Cookie解密">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextArea fx:id="mTextArea27" layoutX="16.0" layoutY="59.0" prefHeight="654.0" prefWidth="345.0" />
+                                          <TextField fx:id="mTextField13" layoutX="553.0" layoutY="19.0" prefHeight="39.0" prefWidth="386.0" />
+                                          <Label layoutX="459.0" layoutY="28.0" text="用到的key">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="384.0" layoutY="736.0" mnemonicParsing="false" onAction="#onButton29Click" prefHeight="39.0" prefWidth="75.0" text="解密">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Button>
+                                          <TextArea fx:id="mTextArea28" layoutX="381.0" layoutY="90.0" prefHeight="621.0" prefWidth="651.0" wrapText="true" />
+                                          <Label layoutX="379.0" layoutY="60.0" text="解密得到的">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="50.0" layoutY="28.0" text="RememberMe参数">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <RadioButton fx:id="mRadiobutton11" layoutX="195.0" layoutY="19.0" mnemonicParsing="false" text="AES GCM" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="加解密模块">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="775.0" prefWidth="1059.0">
+                                       <children>
+                                          <Label layoutX="36.0" layoutY="30.0" prefHeight="27.0" prefWidth="91.0" text="加密方式">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <ChoiceBox fx:id="mChoiceBox1" layoutX="117.0" layoutY="30.0" prefHeight="27.0" prefWidth="57.0" />
+                                          <TextArea fx:id="mTextArea29" layoutX="14.0" layoutY="208.0" prefHeight="553.0" prefWidth="494.0" />
+                                          <TextArea fx:id="mTextArea30" layoutX="529.0" layoutY="210.0" prefHeight="553.0" prefWidth="518.0" />
+                                          <Label layoutX="630.0" layoutY="28.0" prefHeight="27.0" prefWidth="91.0" text="密文编码">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="mTextField14" layoutX="237.0" layoutY="90.0" prefHeight="29.0" prefWidth="337.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></TextField>
+                                          <TextField fx:id="mTextField15" layoutX="751.0" layoutY="91.0" prefHeight="28.0" prefWidth="285.0" promptText="ECB模式不需要">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></TextField>
+                                          <Label layoutX="114.0" layoutY="91.0" prefHeight="27.0" prefWidth="121.0" text="密钥(SecretKey)">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="580.0" layoutY="91.0" prefHeight="27.0" prefWidth="147.0" text="偏移量(Ivparamter)">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="231.0" layoutY="160.0" text="密文">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="763.0" layoutY="161.0" text="明文">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="392.0" layoutY="29.0" prefHeight="27.0" prefWidth="91.0" text="填充方式">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <ChoiceBox fx:id="mChoiceBox3" layoutX="471.0" layoutY="28.0" prefHeight="27.0" prefWidth="143.0" />
+                                          <ChoiceBox fx:id="mChoiceBox4" layoutX="708.0" layoutY="28.0" prefHeight="27.0" prefWidth="109.0" />
+                                          <Label layoutX="199.0" layoutY="29.0" prefHeight="27.0" prefWidth="91.0" text="向量模式">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <ChoiceBox fx:id="mChoiceBox2" layoutX="275.0" layoutY="28.0" prefHeight="27.0" prefWidth="95.0" />
+                                          <Button layoutX="383.0" layoutY="147.0" mnemonicParsing="false" onAction="#onButton30Click" text="解密▶︎">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Button>
+                                          <Button layoutX="569.0" layoutY="148.0" mnemonicParsing="false" onAction="#onButton31Click" text="◀加密">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="834.0" layoutY="30.0" prefHeight="27.0" prefWidth="91.0" text="key/iv编码">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <ChoiceBox fx:id="mChoiceBox5" layoutX="912.0" layoutY="30.0" prefHeight="27.0" prefWidth="109.0" />
+                                          <RadioButton fx:id="mRadiobutton10" layoutX="36.0" layoutY="93.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="68.0" text="补位">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </RadioButton>
+                                       </children></AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="密码解密模块">
+                                 <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="31.0" layoutY="36.0" text="Finalshell密码解密模块:">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="528.0" layoutY="44.0" text="seeyon数据库密码解密模块:">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="mTextArea10" layoutX="31.0" layoutY="89.0" prefHeight="272.0" prefWidth="462.0" promptText="直接放置密文,支持批量" />
+                                          <TextArea fx:id="mTextArea11" layoutX="537.0" layoutY="91.0" prefHeight="273.0" prefWidth="487.0" promptText="直接放置密文" />
+                                          <Button fx:id="mButton10" layoutX="418.0" layoutY="27.0" mnemonicParsing="false" onAction="#onButton10Click" prefHeight="34.0" prefWidth="75.0" text="解密">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                          </Button>
+                                          <Label layoutX="31.0" layoutY="407.0" text="druid密码解密模块:">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <TextArea fx:id="mTextArea12" layoutX="31.0" layoutY="434.0" prefHeight="293.0" prefWidth="465.0" promptText="1.0.16以后第一行放公钥,第二行放密文" />
+                                          <RadioButton fx:id="mRadiobutton2" layoutX="193.0" layoutY="408.0" mnemonicParsing="false" text="1.0.16以后" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="编码命令上线提取">
+               <content>
+                  <TabPane prefHeight="1154.0" prefWidth="1551.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="编码模块">
+                           <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Button layoutX="410.0" layoutY="736.0" mnemonicParsing="false" onAction="#onButton18Click" text="base64解码" />
+                                    <Button layoutX="911.0" layoutY="703.0" mnemonicParsing="false" onAction="#onButton23Click" prefHeight="27.0" prefWidth="75.0" text="ascii编码" />
+                                    <Button layoutX="911.0" layoutY="736.0" mnemonicParsing="false" onAction="#onButton24Click" prefHeight="27.0" prefWidth="75.0" text="ascii解码" />
+                                    <Button layoutX="250.0" layoutY="703.0" mnemonicParsing="false" onAction="#onButton15Click" prefHeight="27.0" prefWidth="83.0" text="URL编码" />
+                                    <Button layoutX="250.0" layoutY="736.0" mnemonicParsing="false" onAction="#onButton16Click" prefHeight="27.0" prefWidth="82.0" text="URL解码" />
+                                    <Button layoutX="585.0" layoutY="736.0" mnemonicParsing="false" onAction="#onButton20Click" text="Hex(十六进制)解码" />
+                                    <Button layoutX="785.0" layoutY="736.0" mnemonicParsing="false" onAction="#onButton22Click" prefHeight="27.0" prefWidth="75.0" text="Html解码" />
+                                    <Button layoutX="410.0" layoutY="703.0" mnemonicParsing="false" onAction="#onButton17Click" text="base64编码" />
+                                    <Button layoutX="68.0" layoutY="703.0" mnemonicParsing="false" onAction="#onButton13Click" text="Unicode转中文" />
+                                    <Button layoutX="68.0" layoutY="736.0" mnemonicParsing="false" onAction="#onButton14Click" text="中文转Unicode" />
+                                    <Button layoutX="585.0" layoutY="703.0" mnemonicParsing="false" onAction="#onButton19Click" text="Hex(十六进制)编码" />
+                                    <Button layoutX="785.0" layoutY="703.0" mnemonicParsing="false" onAction="#onButton21Click" prefHeight="27.0" prefWidth="75.0" text="Html编码" />
+                                    <Label layoutX="41.0" layoutY="31.0" text="编码输入:" />
+                                    <TextArea fx:id="mTextArea13" layoutX="27.0" layoutY="56.0" prefHeight="632.0" prefWidth="988.0" wrapText="true" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                      </Tab>
+                      <Tab text="命令模块">
+                           <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <RadioButton fx:id="mRadiobutton3" layoutX="42.0" layoutY="40.0" mnemonicParsing="false" onAction="#mRadiobutton3Click" text="Bash" />
+                                    <RadioButton fx:id="mRadiobutton4" layoutX="223.0" layoutY="40.0" mnemonicParsing="false" onAction="#mRadiobutton4Click" text="PowerShell" />
+                                    <RadioButton fx:id="mRadiobutton5" layoutX="467.0" layoutY="40.0" mnemonicParsing="false" onAction="#mRadiobutton5Click" text="Python" />
+                                    <RadioButton fx:id="mRadiobutton6" layoutX="700.0" layoutY="40.0" mnemonicParsing="false" onAction="#mRadiobutton6Click" text="Perl" />
+                                    <TextArea fx:id="mTextArea14" layoutX="27.0" layoutY="97.0" onKeyReleased="#shellEncode" prefHeight="249.0" prefWidth="978.0" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                    <TextArea fx:id="mTextArea15" layoutX="24.0" layoutY="427.0" prefHeight="313.0" prefWidth="985.0" wrapText="true">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                      </Tab>
+                        <Tab text="CS上线模块">
+                           <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="37.0" layoutY="42.0" text="CS payload地址:" />
+                                    <TextField fx:id="mTextField9" layoutX="156.0" layoutY="37.0" onKeyReleased="#csEncode1" prefHeight="27.0" prefWidth="531.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextArea fx:id="mTextArea16" layoutX="18.0" layoutY="83.0" prefHeight="113.0" prefWidth="1028.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                    <TextArea fx:id="mTextArea17" layoutX="19.0" layoutY="215.0" prefHeight="120.0" prefWidth="1027.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                    <TextArea fx:id="mTextArea18" layoutX="21.0" layoutY="367.0" prefHeight="126.0" prefWidth="1023.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                    <TextArea fx:id="mTextArea19" layoutX="24.0" layoutY="518.0" prefHeight="128.0" prefWidth="1019.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                    <TextArea fx:id="mTextArea20" layoutX="23.0" layoutY="672.0" prefHeight="114.0" prefWidth="1017.0">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </TextArea>
+                                    <Button fx:id="mButton25" layoutX="818.0" layoutY="37.0" mnemonicParsing="false" onAction="#onButton25Click" text="保存CS payload地址" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="提取路径模块">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="mTextField20" layoutX="60.0" layoutY="50.0" prefHeight="27.0" prefWidth="493.0" promptText="提取内容填入输入框或者填入此处URL" />
+                                    <Label layoutX="20.0" layoutY="46.0" text="URL" />
+                                    <TextArea fx:id="mTextArea31" layoutX="47.0" layoutY="107.0" prefHeight="658.0" prefWidth="417.0" promptText="提取内容填入输入框或者填入此处URL" wrapText="true" />
+                                    <Label layoutX="19.0" layoutY="91.0" text="输入" />
+                                    <TextArea fx:id="mTextArea32" layoutX="545.0" layoutY="218.0" prefHeight="548.0" prefWidth="503.0" wrapText="true" />
+                                    <Label layoutX="504.0" layoutY="226.0" text="输出" />
+                                    <TextArea fx:id="mTextArea33" layoutX="687.0" layoutY="125.0" prefHeight="72.0" prefWidth="321.0" promptText="不匹配关键字" />
+                                    <TextArea fx:id="mTextArea34" layoutX="687.0" layoutY="35.0" prefHeight="63.0" prefWidth="321.0" promptText="匹配关键字" />
+                                    <Button layoutX="518.0" layoutY="114.0" mnemonicParsing="false" onAction="#onButton32Click" prefHeight="27.0" prefWidth="75.0" text="开始提取" />
+                                    <Label layoutX="601.0" layoutY="153.0" text="不匹配关键字" />
+                                    <Label layoutX="609.0" layoutY="55.0" text="匹配关键字" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab text="文件转码">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TextArea fx:id="mTextArea35" layoutX="10.0" layoutY="148.0" prefHeight="259.0" prefWidth="1036.0" wrapText="true" />
+                                    <Button layoutX="412.0" layoutY="53.0" mnemonicParsing="false" onAction="#onButton33Click" text="上传文件">
+                                       <font>
+                                          <Font size="19.0" />
+                                       </font>
+                                    </Button>
+                                    <TextArea fx:id="mTextArea36" layoutX="14.0" layoutY="468.0" prefHeight="287.0" prefWidth="1035.0" wrapText="true" />
+                                    <Label layoutX="28.0" layoutY="110.0" text="Base64">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="30.0" layoutY="435.0" text="bytes">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Accordion />
+      <ToolBar layoutY="1.0" prefHeight="39.0" prefWidth="1060.0">
+        <items>
+          <Button fx:id="mButton5" mnemonicParsing="false" onAction="#onButton5Click" text="代理" />
+            <Label fx:id="mLabeltest" text="代理ip与端口" />
+        </items>
+      </ToolBar>
+
+   </children>
+</AnchorPane>

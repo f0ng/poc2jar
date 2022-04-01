@@ -1,0 +1,32 @@
+
+
+
+
+
+sunloginClient √
+finalshell √
+浏览器 √
+xshell
+navicat √
+
+
+读取chrome浏览器的老密码
+解密finalshell的密码
+
+
+xshell
+Xshell 5
+
+%userprofile%/Documents/NetSarangXshell/Sessions
+
+Xshell 6
+
+%userprofile%/Documents/NetSarang Computer6/Xshell/Sessions
+
+C:/Users/用户名/Documents/Application Data/NetSarang( xshell 或 xftp )Sessions
+
+C:/Users/用户名/Documents/NetSarang Computer6( xshell 或 xftp )Sessions
+
+xshell安装路径( xshell 或 xftp )Sessions
+
+
