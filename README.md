@@ -1,5 +1,18 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
+## 2022.4.1更新v0.56
+
+1.优化URL编码存在非url编码字符的百分号情况
+
+<img width="851" alt="image" src="https://user-images.githubusercontent.com/48286013/161218995-32874b87-340c-48d6-b623-652005938416.png">
+
+2.实现单个exp大类的单个url测试
+
+3.增加单个url测试时的代理功能
+
+4.增加文件`Base64`和`bytes`编码
+
+<img width="1060" alt="image" src="https://user-images.githubusercontent.com/48286013/161271826-e1768017-c90c-4df2-ae9e-2ed2197559ca.png">
 
 ## 2022.3.30更新v0.55
 
