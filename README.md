@@ -10,7 +10,7 @@
 
 3.增加单个url测试时的代理功能
 
-4.增加文件`Base64`和`bytes`编码
+4.增加文件`Base64`和`bytes`编码，具体实战可参考https://mp.weixin.qq.com/s/outtxUANOa406ErGleWjtQ
 
 <img width="1060" alt="image" src="https://user-images.githubusercontent.com/48286013/161271826-e1768017-c90c-4df2-ae9e-2ed2197559ca.png">
 
