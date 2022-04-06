@@ -1,5 +1,5 @@
 # 1.如何使用？
-### 使用jdk8启动`java -jar poc2jar.jar`，或者当默认jdk为8的时候双击jar即可进行使用
+### 使用`jdk8u231`及以下jdk版本启动`java -jar poc2jar.jar`，或者当默认jdk为8的时候双击jar即可进行使用
 
 # 2.有哪些功能？
 0x01.保存poc、exp利用（批量）
