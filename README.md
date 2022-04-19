@@ -12,7 +12,7 @@
 <img width="750" height="650" src="https://user-images.githubusercontent.com/48286013/164015611-656650d3-6713-4b14-a163-c9b205457684.png">
 
 - 批量url检测
-<img width="750" height="650" src="https://user-images.githubusercontent.com/48286013/164015728-7954e283-d976-40e3-8b6a-8d6fd1198c8d.png">
+<img width="750" height="650" src="https://user-images.githubusercontent.com/48286013/164019329-45545297-543f-462e-81ea-47af8ae691fc.png">
 
 3. 修复0.56的百分号编码情况，应为解码情况
 
