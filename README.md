@@ -7,7 +7,7 @@
 
 <img width="750" height="650" src="https://user-images.githubusercontent.com/48286013/164015388-747f179d-c56f-4105-a620-0da108f2beb0.png">
 
-2. 调用python脚本模块优化，适配`pocsuite`调用，可搭配 https://github.com/Wrin9的pocsuite 脚本使用。`Pocsuite`地址有两种配置方式，可以配置成`/usr/local/Cellar/pocsuite3/1.9.1/libexec/bin/pocsuite`这种可执行文件(MacOS可以这么配置)，也可以配置成`python \xxxxxxx\Python\Python36\Lib\site-packages\pocsuite3\cli.py`以python启动的脚本(Windows可以这么配置)
+2. 调用python脚本模块优化，适配`pocsuite`调用，可搭配 https://github.com/Wrin9 的pocsuite脚本使用。`Pocsuite`地址有两种配置方式，可以配置成`/usr/local/Cellar/pocsuite3/1.9.1/libexec/bin/pocsuite`这种可执行文件(MacOS可以这么配置)，也可以配置成`python \xxxxxxx\Python\Python36\Lib\site-packages\pocsuite3\cli.py`以python启动的脚本(Windows可以这么配置)
 - 单个url检测
 <img width="750" height="650" src="https://user-images.githubusercontent.com/48286013/164015611-656650d3-6713-4b14-a163-c9b205457684.png">
 
