@@ -1,5 +1,22 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
+## 2022.4.19更新v0.57
+
+1. 增加写入文件快捷命令模块，包含windows的set写入、echo写入、certutil-Base64写入、certutil-Hex写入，Liunx的echo写入、echo-Base64写入、Echo-Hex写入
+<img width="750" height="650" src="https://user-images.githubusercontent.com/48286013/164015236-644ffe72-5456-4416-be51-feb8242b1264.png">
+
+<img width="750" height="650" src="https://user-images.githubusercontent.com/48286013/164015388-747f179d-c56f-4105-a620-0da108f2beb0.png">
+
+2. 调用python脚本模块优化，适配`pocsuite`调用，可搭配 https://github.com/Wrin9的pocsuite 脚本使用。`Pocsuite`地址有两种配置方式，可以配置成`/usr/local/Cellar/pocsuite3/1.9.1/libexec/bin/pocsuite`这种可执行文件(MacOS可以这么配置)，也可以配置成`python \xxxxxxx\Python\Python36\Lib\site-packages\pocsuite3\cli.py`以python启动的脚本(Windows可以这么配置)
+- 单个url检测
+<img width="750" height="650" src="https://user-images.githubusercontent.com/48286013/164015611-656650d3-6713-4b14-a163-c9b205457684.png">
+
+- 批量url检测
+<img width="750" height="650" src="https://user-images.githubusercontent.com/48286013/164015728-7954e283-d976-40e3-8b6a-8d6fd1198c8d.png">
+
+3. 修复0.56的百分号编码情况，应为解码情况
+
+
 ## 2022.4.1更新v0.56
 
 1.优化URL编码存在非url编码字符的百分号情况
