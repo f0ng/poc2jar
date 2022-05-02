@@ -6,7 +6,7 @@
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/166198459-49d691ec-b1ad-4cb3-a75d-d0ee5064ed2f.png">
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/166198482-2f9e2aed-434a-44e9-8016-d985af7dbb2b.png">
 
-2. 将base64解码区分，默认不再模糊base64解码，需要选中按钮进行
+2. 将base64解码区分，默认不再模糊base64解码，需要选中按钮进行解码
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/166198843-4a88ce60-f1b1-424e-b4e7-5e813b699175.png">
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/166198875-e26d5b4a-be8f-432a-923e-4a1051ece877.png">
