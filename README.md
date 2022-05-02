@@ -1,5 +1,18 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
+## 2022.5.2更新v0.58
+1. 增加`gb2312`编码，适应响应包为乱码的格式
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/166198459-49d691ec-b1ad-4cb3-a75d-d0ee5064ed2f.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/166198482-2f9e2aed-434a-44e9-8016-d985af7dbb2b.png">
+
+2. 将base64解码区分，默认不再模糊base64解码，需要选中按钮进行
+
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/166198843-4a88ce60-f1b1-424e-b4e7-5e813b699175.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/166198875-e26d5b4a-be8f-432a-923e-4a1051ece877.png">
+
+3. 批量url进行利用poc增加代理
+
 ## 2022.4.19更新v0.57
 
 1. 增加写入文件快捷命令模块，包含windows的set写入、echo写入、certutil-Base64写入、certutil-Hex写入，Liunx的echo写入、echo-Base64写入、Echo-Hex写入
