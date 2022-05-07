@@ -1,5 +1,9 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
+## 2022.5.7更新v0.59
+1. windows下写入yml带入中文会出错，原因在于windows下默认写的是gbk格式，但是`poc2jar`是使用utf-8读取的，修改写入编码都用utf-8
+2. windows下请求包都会乱码，`gb2312`没用，原因在于mac上默认编码为utf-8，而windows的默认编码为gbk，导致响应包为utf-8编码的无法解决，同1，修改读取响应编码为utf-8
+
 ## 2022.5.2更新v0.58
 1. 增加`gb2312`编码，适应响应包为乱码的格式
 
