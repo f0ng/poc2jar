@@ -1,5 +1,10 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
+## 2022.5.11更新v0.60
+- druid未授权漏洞利用增加自定义请求头字段，针对某些后台的druid或者需要账号密码登录以后才可以访问的druid系统信息的获取
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/48286013/167894930-46d12eeb-b9e4-4935-a52e-c5fbbd0a6f70.png">
+
+
 ## 2022.5.7更新v0.59
 1. windows下写入yml带入中文会出错，原因在于windows下默认写的是gbk格式，但是`poc2jar`是使用utf-8读取的，修改写入编码都用utf-8
 2. windows下请求包都会乱码，`gb2312`没用，原因在于mac上默认编码为utf-8，而windows的默认编码为gbk，导致响应包为utf-8编码的无法解决，同1，修改读取响应编码为utf-8
