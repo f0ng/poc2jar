@@ -1,5 +1,14 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
+## 2022.5.21更新v0.61
+
+- 更新`cspayload`无法保存的问题(MACOS)
+- 增加写入文件的指定文件名
+- 增加ascii转换模块的逗号模式(遇到一个Spring表达式注入，单双引号无法执行命令，使用byte[]即可执行命令)
+- 增加反弹shell模块，部分参考https://www.revshells.com/ 
+  - bash模式，exec模式，python模式，php模式，powershell模式
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/48286013/169683357-17242f59-1654-4989-85a1-ab50dcbe602f.png">
+
 ## 2022.5.11更新v0.60
 - druid未授权漏洞利用增加自定义请求头字段，针对某些后台的druid或者需要账号密码登录以后才可以访问的druid系统信息的获取
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/48286013/167894930-46d12eeb-b9e4-4935-a52e-c5fbbd0a6f70.png">
