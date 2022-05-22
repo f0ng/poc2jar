@@ -2,7 +2,7 @@
 # 欢迎提更多模块的需求
 ## 2022.5.21更新v0.61
 
-- 更新`cspayload`无法保存的问题(MACOS)
+- 修复`cspayload`无法保存的问题(MACOS)
 - 增加写入文件的指定文件名
 - 增加ascii转换模块的逗号模式(遇到一个Spring表达式注入，单双引号无法执行命令，使用byte[]即可执行命令)
 - 增加反弹shell模块，部分参考https://www.revshells.com/ 
