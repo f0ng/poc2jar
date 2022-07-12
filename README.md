@@ -1,5 +1,18 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
 # 欢迎提更多模块的需求
+## 2022.7.11更新v0.62
+
+- 增加cs linux上线payload保存(curl/wget)
+- 增加识别补丁模块，参考http://bugs.hacking8.com/tiquan/ 、 https://github.com/SecWiki/windows-kernel-exploits
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/48286013/178279869-7a1f7a33-888a-4bde-b51e-d3eeb3e66dd9.png">
+
+- 增加单条命令写入按钮，将echo和set写入进行分行
+- 文件转码模块增加转换按钮，在`base64`、`bcel`、`bytes`三者之间互相转换，当输入其中一种编码时候，点击按钮，将会自动转为其他编码
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/48286013/178280164-5a0c4962-2570-41ba-aa3d-c646a61cf166.png">
+
+
+- 修复shiro解密bug，某些情况下，可以解密，页面只显示了key，没有显示解密后的代码
+- 修复pocsuite模块无法使用问题
 ## 2022.5.21更新v0.61
 
 - 修复`cspayload`无法保存的问题(MACOS)
