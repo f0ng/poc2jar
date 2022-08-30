@@ -1,4 +1,11 @@
 # [FAQ](https://github.com/f0ng/poc2jar/blob/main/FAQ.md)常见问题解答
+
+交流群
+
+<img width="250" alt="image" src="https://user-images.githubusercontent.com/48286013/187467374-c8859242-d96d-4370-962d-d06d6b0d0d28.png">
+
+二维码失效请加微信`f-f0ng`、备注poc2jar交流
+
 # 欢迎提更多模块的需求
 ## 2022.7.11更新v0.62
 
