@@ -7,6 +7,26 @@
 二维码失效请加微信`f-f0ng`、备注poc2jar交流
 
 # 欢迎提更多模块的需求
+## 2022.9.8更新v0.63
+
+- 常用命令模块支持修改
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/48286013/189057326-7fb53b6c-0ef4-49a6-9140-5d08f532252e.png">
+
+- 云/微信秘钥有效性检测
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/48286013/189057954-50813411-3000-48d6-8b9a-4fb530564406.png">
+
+- 口令模块
+
+ i. 通过中文姓名获取拼音
+ 
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/48286013/189058125-bf5bb3cc-9256-4e51-99ee-ce73613f5a68.png">
+
+ ii. 通过输入的关键字信息，生成密码，参考https://www.yuque.com/pmiaowu/bomi9w/ougg6d
+ 
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/48286013/189058662-b1c60568-5baa-4d6f-97e3-f405c9611406.png">
+
+
+
 ## 2022.7.11更新v0.62
 
 - 增加cs linux上线payload保存(curl/wget)
