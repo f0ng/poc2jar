@@ -7,6 +7,14 @@
 二维码失效请加微信`f-f0ng`、备注poc2jar交流
 
 # 欢迎提更多模块的需求
+## 2022.1.12更新v0.64
+- 增加json转参数、参数转json模块
+- 增加分割符号模块
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/212011913-db37df02-0fd9-4914-b9e4-4ad71e9c0218.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/212011940-aa3a04e7-e28d-4449-a33f-ca882602d53f.png">
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/212011979-414bc100-f2e7-48a5-a8c2-f6c454efaaf2.png">
+
+
 ## 2022.9.20更新v0.63beta1
 - 8月初丢失了电脑数据，7月更新的没有了，这里补上（识别补丁模块，文件转码模块）
 
