@@ -7,7 +7,7 @@
 二维码失效请加微信`f-f0ng`、备注poc2jar交流
 
 # 欢迎提更多模块的需求
-## 2022.1.12更新v0.64
+## 2023.1.12更新v0.64
 - 增加json转参数、参数转json模块
 - 增加分割符号模块
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/48286013/212011913-db37df02-0fd9-4914-b9e4-4ad71e9c0218.png">
