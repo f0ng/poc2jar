@@ -7,6 +7,14 @@
 二维码失效请加微信`f-f0ng`、备注poc2jar交流
 
 # 欢迎提更多模块的需求
+## 2023.3.10更新v0.65
+1. 优化URL编码(纯URL编码，类似burpURL编码)
+2. 优化poc保存模块的发包显示问题(之前有些响应包会被吞掉2个字符)
+3. 优化文件转码处文件路径的显示
+4. 文件转码模块，增加class文件转为java文件功能
+<img width="668" alt="image" src="https://user-images.githubusercontent.com/48286013/224238342-30af77ad-0d2a-4a7a-bd75-a1a95e3fb821.png">
+
+
 ## 2023.1.12更新v0.64
 - 增加json转参数、参数转json模块
 - 增加分割符号模块
